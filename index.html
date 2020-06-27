@@ -32,17 +32,24 @@
 
     <!-- Timeblocks -->
           <form method="POST">
-            <div class="form-group row">
-              <div class="form-group col-md-2">
-                <div for="9am" class="hour">9AM</div>
-              </div>
-              <div class="form-group col-md-8">
-                <textarea type="text" name="9AM" id="9AM"></textarea>
-              </div>
-              <div class="form-group col-md-2">
-                <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
-              </div>
-            </div>
+            <div class="container">
+              <div class="form-group row">
+
+                <!-- Hour label -->
+                <label for="9am" class="hour col-md-2 col-form-label">9AM</label>
+
+                <!-- Textarea -->
+                <div class="time-block col-md-8">
+                  <textarea type="text" name="9AM" id="9AM"></textarea>
+                </div>
+
+                <!-- Save Button -->
+                <div class="col-md-2">
+                  <button class="btn saveBtn" type="submit"><i class="far fa-save"></i></button>
+                </div>
+                
+              </div> 
+            </div> <!-- container close-->
           </form>
         
 <!-- 
