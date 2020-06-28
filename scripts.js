@@ -1,3 +1,9 @@
+// Get current formatted time from moment.js
+var now = moment().format('MMMM Do YYYY');
+
+var headerDate = $("#current-day");
+headerDate.text(now);
+
 var saveBtn = document.querySelector("button");
 var event9am = localStorage.getItem("event9am");
 var event10am = localStorage.getItem("event10am");

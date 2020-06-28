@@ -31,45 +31,60 @@
     </header>
 
     <!-- Timeblocks -->
-          <form method="POST">
+
+    <form id="plannerForm">
+      <div class="container" id="plannerContainer">
+        <div class="row" id="9am">
+
+          <div class="col-md-2 hour">
+            <span class="time-block">9AM</span>
+          </div>
+
+          <div class="col-md-9">
+            <input id="9amInput" type="text" class="inputText">
+          </div>
+
+          <div class="col-md-1">
+            <button type="submit" class="btn saveBtn"><i class="far fa-save"></i></button>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+
+
+          <!-- <form method="POST">
             <div class="container">
               <div class="form-group row">
 
-                <!-- Hour label -->
+               
                 <label for="9am" class="hour col-md-2 col-form-label">9AM</label>
 
-                <!-- Textarea -->
+               
                 <div class="time-block col-md-8">
                   <textarea type="text" name="9AM" id="9AM"></textarea>
                 </div>
 
-                <!-- Save Button -->
+              
                 <div class="col-md-2">
                   <button class="btn saveBtn" type="submit"><i class="far fa-save"></i></button>
                 </div>
                 
               </div> 
-            </div> <!-- container close-->
+            </div> 
           </form>
-        
-<!-- 
-        <div class="row">
-          <form method="POST">
-              <div class="col-md-2">
-                <div for="9am" class="hour">9AM</div>
-              </div>
-              <div class="col-md-8">
-                <textarea type="text" name="9AM" id="9AM"></textarea>
-              </div>
-              <div class="col-md-2">
-                <button class="saveBtn" type="submit"><i class="far fa-save"></i></button>
-              </div>
-          </form>
-        </div> -->
+         -->
 
-  
-    <script src="scripts.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="scripts.js"></script>
+    
+    
   </body>
 </html>
