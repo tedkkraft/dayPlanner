@@ -6,7 +6,7 @@ var headerDate = $("#currentDay");
 headerDate.text(now);
 
 
-// Save user input to local storage AKA Realize you should use for loops and jquery
+// Save user input to local storage. *** Improve by using for loops and jquery ***
 document.getElementById("btn9am").addEventListener("click", function(event){
     event.preventDefault();
     localStorage.setItem("9amEvent", $("#9amInput").val());
@@ -47,10 +47,18 @@ document.getElementById("btn4pm").addEventListener("click", function(event){
     localStorage.setItem("4pmEvent", $("#4pmInput").val());
 
 });
-document.getElementById("btn9am").addEventListener("click", function(event){
+document.getElementById("btn5pm").addEventListener("click", function(event){
     event.preventDefault();
     localStorage.setItem("5pmEvent", $("#5pmInput").val());
 });
+
+
+// Get any saved user input from local storage and print it to the page
+var saved9am = localStorage.getItem("9amEvent");
+if (saved9am) {
+    $("#9amInput").val(saved9am);
+}
+
 
 /* Hover styling */
 $(document).ready(function(){
