@@ -1,23 +1,55 @@
 // Get current formatted time from moment.js
 var now = moment().format('MMMM Do YYYY');
 
-var headerDate = $("#current-day");
+// Print formatted date to jumbotron
+var headerDate = $("#currentDay");
 headerDate.text(now);
 
-var saveBtn = document.querySelector("button");
-var event9am = localStorage.getItem("event9am");
-var event10am = localStorage.getItem("event10am");
-var event11am = localStorage.getItem("event11am");
-var event12pm = localStorage.getItem("event12pm");
-var event1pm = localStorage.getItem("event1pm");
-var event2pm = localStorage.getItem("event2pm");
-var event3pm = localStorage.getItem("event3pm");
-var event4pm = localStorage.getItem("event4pm");
-var event5pm = localStorage.getItem("event5pm");
 
-saveBtn.addEventListener("click", function(){
-    event9am.textarea = event9am;
-    localStorage.setItem("event9am", event9am);
+// Save user input to local storage AKA Realize you should use for loops and jquery
+document.getElementById("btn9am").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("9amEvent", $("#9amInput").val());
+});
+
+document.getElementById("btn10am").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("10amEvent", $("#10amInput").val());
+});
+
+document.getElementById("btn11am").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("11amEvent", $("#11amInput").val());
+});
+
+document.getElementById("btn12pm").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("12pmEvent", $("#12pmInput").val());
+});
+
+document.getElementById("btn1pm").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("1pmEvent", $("#1pmInput").val());
+});
+
+document.getElementById("btn2pm").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("2pmEvent", $("#2pmInput").val());
+});
+
+document.getElementById("btn3pm").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("3pmEvent", $("#9amInput").val());
+});
+
+document.getElementById("btn4pm").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("4pmEvent", $("#4pmInput").val());
+
+});
+document.getElementById("btn9am").addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("5pmEvent", $("#5pmInput").val());
 });
 
 /* Hover styling */
