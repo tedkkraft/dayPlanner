@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-
+/* using green background for visibility while coding */
 input {
   background: green;
   border: none;
